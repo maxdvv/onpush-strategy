@@ -1,0 +1,8 @@
+<div *ngFor="let user of usersList3">
+  <div>{{user.name + ', ' + user.age + ' years old'}}</div>
+</div>
+
+<h2>User service</h2>
+<div *ngFor="let user of userService.users$ | async">
+  <div>{{user.name + ', ' + user.age + ' years old'}}</div>
+</div>

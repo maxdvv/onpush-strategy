@@ -1,0 +1,13 @@
+<form>
+  <div>
+    <label>Show full input text after press 'Enter'</label>
+    <p><input placeholder="Enter anything" (change)="onChange($event)"></p>
+  </div>
+  <div>{{ inputText }}</div>
+  <br>
+  <div>
+    <label>Show input text after press anykey</label>
+    <p><input placeholder="Enter anything" (keyup)="showKey($event)"></p>
+  </div>
+  <div>{{ inputKey }}</div>
+</form>
